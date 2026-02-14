@@ -1,0 +1,298 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #020617, #1e293b, #475569);
+}
+
+/* HEADER */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+}
+
+   .tagline {
+    color: #fde047;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-info {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.hero-info span {
+    background: rgba(255,255,255,0.1);
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: #facc15;
+    color: #0f172a;
+    padding: 12px 28px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hero-btn:hover {
+    background: #fde047;
+}
+
+
+
+/* NAVBAR */
+.navbar {
+    background: linear-gradient(to right, #020617, #0f172a);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 18px 60px;
+    gap: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+/* LOGO */
+.logo {
+    color: #facc15;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    transition: 0.3s;
+}
+
+/* efek hover */
+.logo:hover {
+    color: #fde047;
+    transform: translateY(-1px);
+}
+
+/* MENU CONTAINER */
+.menu {
+    display: flex;
+    gap: 35px;
+}
+
+/* MENU LINK */
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 5px;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT GARIS ANIMASI */
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #facc15;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #facc15;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+
+
+
+/* SERVICES */
+.service {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px;
+    min-height: 40vh;
+}
+
+
+.card {
+  background: white;
+    width: 280px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    border-top: 4px solid #facc15;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.service-logo {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+
+
+/* ABOUT */
+.about {
+    background: linear-gradient(to right, #1e3a8a, #0f172a);
+    margin: 20px 80px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+     min-height: 40vh;
+}
+
+.about h2 {
+    color: white;
+}
+
+.about p {
+    color: #facc15;
+}
+
+/* INFO + FORM */
+.info {
+  padding: 60px;
+}
+
+.deskripsi {
+  background: linear-gradient(135deg, #ffffff, #f1f5f9);
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.form-daftar {
+  background: linear-gradient(135deg, #ffffff, #f8fafc);
+  padding: 35px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  border-left: 5px solid #facc15;
+}
+
+
+.form-daftar input,
+.form-daftar select,
+.form-daftar textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.form-daftar button {
+  background: linear-gradient(to right, #facc15, #fde047);
+  border: none;
+  padding: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  color: #0f172a;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.form-daftar button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+
+/* FOOTER */
+footer {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ===================== */
+/* RESPONSIVE MOBILE */
+/* ===================== */
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .tagline {
+        font-size: 16px;
+    }
+
+    /* SERVICES */
+    .service {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* ABOUT */
+    .about {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    /* INFO SECTION */
+    .info {
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .deskripsi,
+    .form-daftar {
+        width: 100%;
+    }
+
+}
+
